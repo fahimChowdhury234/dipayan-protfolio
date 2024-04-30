@@ -3,20 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="google" content="notranslate" />
-      <meta name="generator" content="SEOmatic" />
-      <meta name="description" content="Reversing prediabetes starts here. 1 in 3 American adults has prediabetes. Find out if you’re at risk for prediabetes today so you can reverse it and…" />
-      <meta name="referrer" content="no-referrer-when-downgrade" />
-      <meta name="robots" content="all" />
-      <meta content="en_US" property="og:locale" />
-      <meta content="Whats Prediabetes? | whatsprediabetes.com" property="og:site_name" />
-      <meta content="website" property="og:type" />
-      <meta content="https://whatsprediabetes.com/" property="og:url" />
-      <meta content="Whats Prediabetes? | WhatsPrediabetes.com" property="og:title" />
-      <meta
-         content="Reversing prediabetes starts here. 1 in 3 American adults has prediabetes. Find out if you’re at risk for prediabetes today so you can reverse it and prevent type 2 diabetes."
-         property="og:description"
-      />
+
       <title>Dipayan Protfolio</title>
       <!-- Font Link -->
 
@@ -33,6 +20,7 @@
 
       <!--  coustom css -->
       <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="./responsive.css" />
    </head>
 
    <body id="body">
@@ -68,10 +56,16 @@
                      <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
                            <li class="nav-item">
-                              <a class="nav-link active" href="#" target="_self" title="">My Projects</a>
+                              <a class="nav-link" href="./project.html" target="_self" title="">My Projects</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#" target="_self" title="">Testimonials</a>
+                              <a class="nav-link active" href="./index.html" target="_self" title="">Testimonials</a>
+                           </li>
+                           <li class="nav-item d-lg-none">
+                              <a class="nav-link" href="#" target="_self" title="">Clients</a>
+                           </li>
+                           <li class="nav-item d-lg-none">
+                              <a class="nav-link" href="#" target="_self" title="">Contact</a>
                            </li>
                         </ul>
                      </div>
@@ -80,7 +74,7 @@
                <a class="navbar-brand text-white d-flex align-items-center gap-2" href="./index.html">
                   <img src="./assets/img/logo.png" alt="" />
                </a>
-               <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+               <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase navbar-nav-right">
                   <li class="nav-item">
                      <a class="nav-link" href="#" target="_self" title="">Clients</a>
                   </li>
@@ -479,6 +473,29 @@
                slidesToShow: 6,
                slidesToScroll: 0.1,
                pauseOnHover: true,
+               responsive: [
+                  {
+                     breakpoint: 1024,
+                     settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 5,
+                     },
+                  },
+                  {
+                     breakpoint: 600,
+                     settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                     },
+                  },
+                  {
+                     breakpoint: 480,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 0.1,
+                     },
+                  },
+               ],
             });
          });
       </script>

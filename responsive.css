@@ -1,0 +1,128 @@
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+
+    .navbar-nav-right {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: flex-end !important;
+    }
+
+    .navbar-toggler svg {
+        stroke: #000;
+    }
+
+    .navbar-brand {
+        left: 15%;
+    }
+
+    .navbar-expand-xl .offcanvas {
+        width: 90%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        gap: 20px;
+    }
+
+    .hero-section {
+        height: 485px;
+    }
+
+    .hero-box h1 {
+        font-size: 28px;
+    }
+
+    .hero-box p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .hero-box {
+        padding-top: 50px;
+    }
+
+    .home-projects-section .title h2 {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .home-projects-section .col-md-4,
+    .home-projects-section .col-md-6 {
+        width: 100%;
+    }
+
+    .home-projects-box-img {
+        height: 360px;
+
+    }
+
+    .home-projects-box-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .home-projects-box-title h3 {
+        font-size: 16px;
+    }
+
+    .home-projects-box-title p {
+        font-size: 14px;
+    }
+
+    .testimonials-row .col-md-4 {
+        order: 1;
+    }
+
+    .testimonials-author-thought {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 0;
+    }
+
+    .testimonials-author-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .testimonials-author-info h2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 5px;
+    }
+
+    .testimonials-author-info span {
+        font-size: 20px;
+    }
+
+    .home-client-section {
+        padding: 70px 0 !important;
+    }
+
+    .client-massage p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .footer-box-one {
+        width: 100%;
+    }
+
+    .footer-box-one p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+}
