@@ -21,6 +21,7 @@
       <!--  coustom css -->
       <link rel="stylesheet" href="./style.css" />
       <link rel="stylesheet" href="./responsive.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    </head>
 
    <body id="body">
@@ -90,8 +91,8 @@
                <div class="row d-flex justify-content-center align-items-center">
                   <div class="col-md-8">
                      <div class="hero-box">
-                        <h1>Hi, I a’m Dipayan</h1>
-                        <p>A design passionate obsessed with solving problems, bridging gaps between user & their goals.</p>
+                        <h1>Hi, I am Dipayan</h1>
+                        <p data-aos="fade-up">A design passionate obsessed with solving problems, bridging gaps between user & their goals.</p>
                      </div>
                   </div>
                </div>
@@ -104,16 +105,16 @@
             <div class="container">
                <div class="title">
                   <span>My Projects</span>
-                  <h2>From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
+                  <h2 data-aos="fade-up">From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
                </div>
                <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-up">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-1.png" alt="img" />
 
                            <div class="home-projects-box-info">
-                              <a href="#">
+                              <a href="./project.html">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -124,17 +125,17 @@
                            </div>
                         </div>
                         <div class="home-projects-box-title">
-                           <h3>BUILDING AN ONLINE MAGAZINE</h3>
+                           <h3>BUILDING AN <span>ONLINE MAGAZINE</span></h3>
                            <p>5 Million Downloads</p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-right">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-2.png" alt="img" />
                            <div class="home-projects-box-info">
-                              <a href="#">
+                              <a href="./project.html">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -145,7 +146,7 @@
                            </div>
                         </div>
                         <div class="home-projects-box-title">
-                           <h3>BUILDING AN ONLINE MAGAZINE</h3>
+                           <h3>All about <span>sustainable Energy</span></h3>
                            <p>5 Million Downloads</p>
                         </div>
                      </div>
@@ -155,7 +156,7 @@
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-3.png" alt="img" />
                            <div class="home-projects-box-info">
-                              <a href="#">
+                              <a href="./project.htmls">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -166,7 +167,7 @@
                            </div>
                         </div>
                         <div class="home-projects-box-title">
-                           <h3>BUILDING AN ONLINE MAGAZINE</h3>
+                           <h3>Re-Defining <span>Telco Experience</span></h3>
                            <p>5 Million Downloads</p>
                         </div>
                      </div>
@@ -175,8 +176,8 @@
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-4.png" alt="img" />
-                           <div class="home-projects-box-info">
-                              <a href="#">
+                           <div class="home-projects-box-info home-projects-box-info-lg">
+                              <a href="./project.htmls">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -196,8 +197,8 @@
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-5.png" alt="img" />
-                           <div class="home-projects-box-info">
-                              <a href="#">
+                           <div class="home-projects-box-info home-projects-box-info-lg">
+                              <a href="./project.html">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -217,8 +218,8 @@
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-6.png" alt="img" />
-                           <div class="home-projects-box-info">
-                              <a href="#">
+                           <div class="home-projects-box-info home-projects-box-info-lg">
+                              <a href="./project.html">
                                  <h3>
                                     Designing an <br />
                                     Online Magazine
@@ -415,8 +416,14 @@
       ></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
       <script>
          $(document).ready(function () {
+            AOS.init({
+               duration: 700,
+               offset: 700,
+            });
             $(".slider").slick({
                slidesToShow: 1,
                slidesToScroll: 1,
