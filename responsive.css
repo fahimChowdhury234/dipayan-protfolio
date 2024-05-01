@@ -160,7 +160,8 @@
         font-size: 14px;
     }
 
-    .wireframes-project-section .title {
+    .wireframes-project-section .title,
+    .wireframes-project-section-2 .title {
         padding: 20px;
     }
 
@@ -173,7 +174,8 @@
 
     }
 
-    .visual-direction-section .title {
+    .visual-direction-section .title,
+    .visual-direction-section-2 .title {
         width: 100%;
     }
 
@@ -198,6 +200,7 @@
     }
 
     .visual-direction-section,
+    .visual-direction-section-2,
     .section {
         padding: 30px 0;
     }
@@ -209,5 +212,9 @@
     .topToBottomBtn {
         right: 50px;
         bottom: 115px;
+    }
+
+    .visual-direction-section-2 .row img {
+        height: 100% !important;
     }
 }
