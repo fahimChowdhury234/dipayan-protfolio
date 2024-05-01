@@ -33,7 +33,7 @@
          </video>
       </div>
 
-      <main id="page-content" style="display: none">
+      <main id="page-content">
          <header class="main-header">
             <nav class="navbar navbar-expand-xl bg-transparent text-brand container">
                <button
@@ -57,13 +57,13 @@
                      <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
                            <li class="nav-item">
-                              <a class="nav-link" href="./project.html" target="_self" title="">My Projects</a>
+                              <a class="nav-link" href="#projects" target="_self" title="">My Projects</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link active" href="./index.html" target="_self" title="">Testimonials</a>
+                              <a class="nav-link active" href="#testimonials" target="_self" title="">Testimonials</a>
                            </li>
                            <li class="nav-item d-lg-none">
-                              <a class="nav-link" href="#" target="_self" title="">Clients</a>
+                              <a class="nav-link" href="#client" target="_self" title="">Clients</a>
                            </li>
                            <li class="nav-item d-lg-none">
                               <a class="nav-link" href="#" target="_self" title="">Contact</a>
@@ -77,10 +77,10 @@
                </a>
                <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase navbar-nav-right">
                   <li class="nav-item">
-                     <a class="nav-link" href="#" target="_self" title="">Clients</a>
+                     <a class="nav-link" href="#client" target="_self" title="">Clients</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#" target="_self" title="">Contact</a>
+                     <a class="nav-link" href="#contact" target="_self" title="">Contact</a>
                   </li>
                </ul>
             </nav>
@@ -98,17 +98,18 @@
                </div>
             </div>
             <div class="hero-shape">
-               <img src="./assets/img/shape.svg" alt="" />
+               <img id="shape-img" src="./assets/img/shape.svg" alt="" />
             </div>
          </div>
-         <section class="home-projects-section section">
+
+         <section class="home-projects-section section" id="projects">
             <div class="container">
                <div class="title">
                   <span>My Projects</span>
                   <h2 data-aos="fade-up">From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
                </div>
                <div class="row">
-                  <div class="col-md-4" data-aos="fade-up">
+                  <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-1.png" alt="img" />
@@ -130,7 +131,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4" data-aos="fade-right">
+                  <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-2.png" alt="img" />
@@ -151,7 +152,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-3.png" alt="img" />
@@ -172,7 +173,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-4.png" alt="img" />
@@ -193,7 +194,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-5.png" alt="img" />
@@ -214,7 +215,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                      <div class="home-projects-box">
                         <div class="home-projects-box-img">
                            <img src="./assets/img/project-6.png" alt="img" />
@@ -238,7 +239,7 @@
                </div>
             </div>
          </section>
-         <section class="home-testimonials-section section">
+         <section class="home-testimonials-section section" id="testimonials">
             <div class="container">
                <div class="d-flex justify-content-between align-items-center mb-5 pb-4">
                   <div class="title mb-0">
@@ -291,7 +292,7 @@
                </section>
             </div>
          </section>
-         <section class="home-client-section section">
+         <section class="home-client-section section" id="client">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-md-9">
@@ -363,7 +364,7 @@
                </div>
             </div>
          </section>
-         <footer class="footer-section section">
+         <footer class="footer-section section" id="contact">
             <div class="container">
                <div class="row align-items-center">
                   <div class="col-md-12">
@@ -394,15 +395,6 @@
          </footer>
       </main>
       <!-- js files -->
-      <script>
-         window.addEventListener("load", function () {
-            // Show animation for 3 seconds
-            setTimeout(function () {
-               document.getElementById("animation-container").style.display = "none";
-               document.getElementById("page-content").style.display = "block";
-            }, 3000);
-         });
-      </script>
 
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -417,13 +409,35 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         window.addEventListener("load", function () {
+            // Show animation for 3 seconds
+            setTimeout(function () {
+               document.getElementById("animation-container").style.display = "none";
+               document.getElementById("page-content").style.display = "block";
+               AOS.init({
+                  duration: 700,
+                  offset: 200,
+               });
+            }, 3000);
+         });
+         window.addEventListener("scroll", function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var image = document.getElementById("shape-img");
+            var heroSection = document.querySelector(".hero-section");
+            var heroHeight = heroSection.offsetHeight;
 
+            // Calculate the percentage scrolled
+            var scrollPercent = (scrollTop / heroHeight) * 100;
+
+            // Set the height of the image based on the scroll percentage, up to 100%
+            if (scrollPercent <= 100) {
+               image.style.height = scrollPercent + "%";
+            }
+         });
+      </script>
       <script>
          $(document).ready(function () {
-            AOS.init({
-               duration: 700,
-               offset: 700,
-            });
             $(".slider").slick({
                slidesToShow: 1,
                slidesToScroll: 1,
@@ -451,24 +465,6 @@
                updatePagingInfo(currentSlide + 1, slick.slideCount);
             });
 
-            // $(".cards").slick({
-            //    slidesToShow: 6,
-            //    slidesToScroll: 1,
-            //    autoplay: true,
-            //    autoplaySpeed: 0,
-            //    speed: 5000,
-            //    pauseOnHover: false,
-            //    cssEase: "linear",
-            // });
-            // $(".cards").on("mouseenter", function () {
-            //    // Decrease the speed when mouse enters the slider
-            //    $(this).slick("slickSetOption", "speed", 3000);
-            // });
-
-            // $(".cards").on("mouseleave", function () {
-            //    // Restore the original speed when mouse leaves the slider
-            //    $(this).slick("slickSetOption", "speed", 8000);
-            // });
             var $cards = $(".cards");
 
             $cards.slick({

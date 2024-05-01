@@ -183,10 +183,10 @@ a {
     font-size: 48px;
     font-weight: 400;
     line-height: 60px;
-    /* animation-name: welcomeFadeIn, welcomeMoveIn;
+    animation-name: welcomeFadeIn, welcomeMoveIn;
     animation-duration: calc(0.9 * 1s), calc(0.7 * 1s);
     animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-    animation-fill-mode: both */
+    animation-fill-mode: both
 }
 
 .hero-shape {
@@ -194,6 +194,12 @@ a {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+
+    height: 180px;
+}
+
+.hero-shape img {
+    height: 0%;
 }
 
 .section {
