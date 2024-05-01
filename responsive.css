@@ -125,4 +125,75 @@
         margin-top: 40px;
     }
 
+    .backbtn {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .projects-details-hero span {
+        font-size: 14px;
+    }
+
+    .projects-details-hero h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 10px;
+    }
+
+    .projects-details-hero img {
+        width: 100%;
+    }
+
+    .design-process {
+        height: 280px;
+        flex-wrap: wrap;
+    }
+
+    .design-process-item {
+        width: 85px;
+        height: 85px;
+    }
+
+    .design-process-item p {
+        font-size: 14px;
+    }
+
+    .wireframes-project-section .title {
+        padding: 20px;
+    }
+
+    .wireframes-project-section .row .col-md-12 img {
+        width: 100%;
+    }
+
+    .visual-direction-section .row .col-md-7 img {
+        width: 100%;
+
+    }
+
+    .visual-direction-section .row {
+        gap: 20px;
+    }
+
+    .visual-direction-box img {
+        width: 100%;
+    }
+
+    .visual-direction-search {
+        width: 100%;
+    }
+
+    .visual-direction-end-note {
+        padding: 20px;
+    }
+
+    .visual-direction-section,
+    .section {
+        padding: 30px 0;
+    }
+
+    .project-hero {
+        height: 350px;
+    }
 }
