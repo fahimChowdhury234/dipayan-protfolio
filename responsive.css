@@ -133,10 +133,11 @@
 
     .projects-details-hero span {
         font-size: 14px;
+        margin: 0;
     }
 
     .projects-details-hero h1 {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 32px;
         margin-top: 10px;
     }
@@ -172,6 +173,14 @@
 
     }
 
+    .visual-direction-section .title {
+        width: 100%;
+    }
+
+    .project-details-section .row .col-md-8 {
+        width: 100%;
+    }
+
     .visual-direction-section .row {
         gap: 20px;
     }
@@ -195,5 +204,10 @@
 
     .project-hero {
         height: 350px;
+    }
+
+    .topToBottomBtn {
+        right: 50px;
+        bottom: 115px;
     }
 }
