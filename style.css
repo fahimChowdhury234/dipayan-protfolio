@@ -469,6 +469,7 @@ a {
 .slide-card {
     background-color: #FFFAF3;
     padding: 30px;
+    height: 220px;
 }
 
 .slide-card .card-heading {
