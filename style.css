@@ -587,6 +587,10 @@ a {
     margin-top: -300px;
 }
 
+.project-details-section .row .col-md-8 {
+    width: 66.4%;
+}
+
 .projects-details-hero {
     margin-bottom: 30px;
 }
@@ -606,6 +610,10 @@ a {
     font-family: 'ObjectSans-Medium', sans-serif;
 
     margin-bottom: 20px;
+}
+
+.projects-details-hero img {
+    width: 100%;
 }
 
 .project-details-box {
