@@ -117,8 +117,7 @@ a {
 
 .navbar {
     justify-content: space-between !important;
-    padding: 0 30px;
-    height: 105px;
+    padding: 0 0px;
     position: relative;
 }
 
@@ -143,12 +142,17 @@ a {
     width: 65px;
 }
 
+.navbar-nav .nav-item {
+    text-align: center;
+    width: 164px;
+}
+
 .navbar-nav .nav-link {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     color: #000;
-    padding: 28px 0;
+    padding: 41px 0;
 
 }
 
@@ -177,6 +181,10 @@ a {
     color: #010101;
     margin-bottom: 30px;
     font-family: 'ObjectSans-Medium', sans-serif;
+    animation-name: welcomeFadeIn, welcomeMoveIn;
+    animation-duration: calc(0.9 * 1s), calc(0.7 * 1s);
+    animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    animation-fill-mode: both
 }
 
 .hero-box p {
@@ -215,10 +223,10 @@ a {
     font-weight: 400;
     line-height: 54px;
     width: 70%;
-    /* animation-name: welcomeFadeIn, welcomeMoveIn;
+    animation-name: welcomeFadeIn, welcomeMoveIn;
     animation-duration: calc(0.9 * 1s), calc(0.7 * 1s);
     animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-    animation-fill-mode: both */
+    animation-fill-mode: both
 }
 
 .title span {
@@ -500,9 +508,8 @@ a {
 }
 
 .footer-box-one p {
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 72px;
+    font-size: 40px;
+    line-height: 54px;
     color: #fff;
 }
 
@@ -546,9 +553,23 @@ a {
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+}
+
+.contact-info .svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
 
 }
 
+.contact-info .svg-icon svg {
+    color: #0C0C0C;
+    width: 18px;
+}
 
 #animation-container {
     position: fixed;
@@ -631,6 +652,10 @@ a {
     padding-top: 100px;
 }
 
+.treebo-project-section {
+    padding-bottom: 100px;
+}
+
 .project-details-box b {
     font-family: 'ObjectSans-bold', sans-serif;
     font-size: 16px;
@@ -654,6 +679,10 @@ a {
     font-weight: 400;
     line-height: 28px;
     color: #4E4E4E;
+}
+
+.project-details-box .row .col-md-12 {
+    margin-bottom: 15px;
 }
 
 .design-process {

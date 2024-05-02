@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) and (min-width: 300px) {
+    .main-header {
+        padding: 20px 0;
+    }
 
     .navbar-nav-right {
         display: none;
@@ -34,6 +37,9 @@
 
     .hero-box h1 {
         font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 20px;
     }
 
     .hero-box p {
@@ -42,11 +48,20 @@
     }
 
     .hero-box {
-        padding-top: 50px;
+        padding-top: 130px;
+    }
+
+    .title {
+        padding-left: 8px;
+    }
+
+    .title span {
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .home-projects-section .title h2 {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         width: 100%;
     }
@@ -54,6 +69,17 @@
     .home-projects-section .col-md-4,
     .home-projects-section .col-md-6 {
         width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .home-projects-section .col-md-12 {
+
+        padding: 0;
+    }
+
+    .home-projects-box-info-lg a {
+        width: 80%;
     }
 
     .home-projects-box-img {
@@ -66,8 +92,13 @@
         object-fit: cover;
     }
 
+    .home-projects-box-title {
+        padding: 16px 16px;
+    }
+
     .home-projects-box-title h3 {
         font-size: 16px;
+        margin-bottom: 0;
     }
 
     .home-projects-box-title p {
@@ -79,9 +110,10 @@
     }
 
     .testimonials-author-thought {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 26px;
         padding: 20px 0;
+        padding-bottom: 30px;
     }
 
     .testimonials-author-info {
@@ -91,13 +123,13 @@
     }
 
     .testimonials-author-info h2 {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 32px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .testimonials-author-info span {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .home-client-section {
@@ -114,8 +146,8 @@
     }
 
     .footer-box-one p {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .contact-info {
@@ -144,6 +176,14 @@
 
     .projects-details-hero img {
         width: 100%;
+    }
+
+    .treebo-project-details-box {
+        padding-top: 30px;
+    }
+
+    .treebo-project-section {
+        padding-bottom: 30px;
     }
 
     .design-process {
@@ -220,5 +260,19 @@
 
     .visual-direction-section-2 .row img {
         height: 100% !important;
+    }
+
+    .project-footer {
+        padding: 20px;
+    }
+
+    .contact-info a {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .footer-section {
+        padding: 40px 10px !important;
     }
 }
