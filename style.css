@@ -5,11 +5,9 @@
 }
 
 html {
-    font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
 
 
 @font-face {
@@ -55,9 +53,9 @@ body {
     background-color: #FFFFFF;
     color: var(--text-color);
     position: relative;
-    overflow-x: hidden;
     font-family: 'ObjectSans', sans-serif;
-
+    height: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -646,6 +644,10 @@ a {
 
 .projects-details-hero img {
     width: 100%;
+}
+
+.crafting-box {
+    padding-top: 60px;
 }
 
 .project-details-box {

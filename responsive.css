@@ -246,6 +246,10 @@
         width: 100%;
     }
 
+    .crafting-box {
+        padding-top: 0px;
+    }
+
     .treebo-project-details-box {
         padding-top: 30px;
     }

@@ -258,7 +258,7 @@
                   <span class="pagingInfo"></span>
                </div>
 
-               <section class="slider">
+               <div class="slider" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                   <div>
                      <div class="row testimonials-row">
                         <div class="col-md-4">
@@ -401,11 +401,11 @@
                         </div>
                      </div>
                   </div>
-               </section>
+               </div>
             </div>
          </section>
-         <section class="home-client-section section" id="clients">
-            <div class="container">
+         <section class="home-client-section section">
+            <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                <div class="row justify-content-center">
                   <div class="col-md-9">
                      <div class="client-massage">
@@ -417,7 +417,7 @@
             </div>
          </section>
          <section class="home-cards-section section">
-            <div class="cards">
+            <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                <div class="slide-card">
                   <div class="card-heading">
                      <img src="./assets/img/adobe.png" alt="" />
@@ -556,17 +556,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
-         // window.addEventListener("load", function () {
-         //    // Show animation for 3 seconds
-         //    setTimeout(function () {
-         //       document.getElementById("animation-container").style.display = "none";
-         //       document.getElementById("page-content").style.display = "block";
-         //       AOS.init({
-         //          duration: 1100,
-         //          offset: 0,
-         //       });
-         //    }, 3000);
-         // });
          window.addEventListener("load", function () {
             // Show animation for 3 seconds
             setTimeout(function () {
@@ -604,6 +593,11 @@
          });
       </script>
       <script>
+         let scrollRef = 0;
+         $(window).on("resize scroll", function () {
+            // increase value up to 10, then refresh AOS
+            scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+         });
          $(document).ready(function () {
             $(".slider").slick({
                slidesToShow: 1,
