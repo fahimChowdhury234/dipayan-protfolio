@@ -3,6 +3,10 @@
         padding: 20px 0;
     }
 
+    .navbar-nav .nav-item {
+        width: fit-content;
+    }
+
     .navbar-nav-right {
         display: none;
     }
@@ -25,14 +29,17 @@
 
     .navbar-nav .nav-link {
         padding: 10px 0;
+        height: auto;
     }
 
     .navbar-nav {
         gap: 20px;
+        padding: 10px;
     }
 
     .hero-section {
-        height: 485px;
+        height: 450px;
+        padding: 0 16px;
     }
 
     .hero-box h1 {
@@ -43,8 +50,11 @@
     }
 
     .hero-box p {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 400;
         line-height: 24px;
+        text-align: center;
+
     }
 
     .hero-box {
@@ -52,12 +62,20 @@
     }
 
     .title {
-        padding-left: 8px;
+        padding: 0 8px;
     }
 
     .title span {
         font-size: 12px;
         margin-bottom: 10px;
+    }
+
+    .imgLg {
+        display: none;
+    }
+
+    .imgSm {
+        display: block;
     }
 
     .home-projects-section .title h2 {
@@ -105,13 +123,24 @@
         font-size: 14px;
     }
 
+    .home-testimonials-section {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .home-testimonials-section .container {
+        padding: 0;
+    }
+
     .testimonials-row .col-md-4 {
         order: 1;
     }
 
     .testimonials-author-thought {
-        font-size: 16px;
-        line-height: 26px;
+
+
+        font-size: 18px;
+        line-height: 28px;
         padding: 20px 0;
         padding-bottom: 30px;
     }
@@ -123,22 +152,61 @@
     }
 
     .testimonials-author-info h2 {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 14px;
+        line-height: 24px;
         margin-bottom: 0px;
     }
 
     .testimonials-author-info span {
-        font-size: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .pagingInfo {
+        font-size: 12px;
+        line-height: 24px;
+
+    }
+
+    .slide-card {
+
+        height: 177px;
     }
 
     .home-client-section {
-        padding: 70px 0 !important;
+        padding: 30px 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .client-massage {
+        padding: 0 10px;
+        text-align: left;
+    }
+
+    .client-massage span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
     }
 
     .client-massage p {
-        font-size: 24px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .socil-icon img:first-child {
+        width: 40px;
+    }
+
+    .socil-icon img:last-child {
+        width: 32px;
+    }
+
+    .footer-download-box span {
+        font-size: 16px;
         line-height: 32px;
+
     }
 
     .footer-box-one {
@@ -273,6 +341,6 @@
     }
 
     .footer-section {
-        padding: 40px 10px !important;
+        padding: 40px 12px !important;
     }
 }
