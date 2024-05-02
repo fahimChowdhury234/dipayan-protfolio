@@ -589,6 +589,10 @@ a {
     padding-bottom: 40px;
 }
 
+.snaps-project-details-section {
+    padding-bottom: 90px;
+}
+
 .project-details-section .row .col-md-8 {
     width: 66.4%;
 }
@@ -603,6 +607,7 @@ a {
     letter-spacing: 0.05em;
     margin-bottom: 5px;
     display: inline-block;
+    text-transform: uppercase;
 }
 
 .projects-details-hero h1 {
@@ -620,6 +625,10 @@ a {
 
 .project-details-box {
     margin-bottom: 40px;
+}
+
+.treebo-project-details-box {
+    padding-top: 100px;
 }
 
 .project-details-box b {
@@ -730,7 +739,7 @@ a {
 .visual-direction-section .title,
 .visual-direction-section-2 .title {
     width: 68%;
-    margin: 0 auto 55px auto;
+    margin: 0 auto 120px auto;
 }
 
 .visual-direction-section .title h2,
@@ -783,13 +792,13 @@ a {
 }
 
 .visual-direction-section-2 .row .col-md-12 .img-3 {
-    height: 214px;
+    height: 100%;
 }
 
 .visual-direction-section-2 .row .col-md-12 .img-4,
 .visual-direction-section-2 .row .col-md-12 .img-5,
 .visual-direction-section-2 .row .col-md-12 .img-6 {
-    height: 500px;
+    height: 514px;
 }
 
 

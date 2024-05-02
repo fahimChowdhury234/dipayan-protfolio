@@ -183,6 +183,10 @@
         width: 100%;
     }
 
+    .snaps-project-details-section {
+        padding-bottom: 30px;
+    }
+
     .visual-direction-section .row {
         gap: 20px;
     }
