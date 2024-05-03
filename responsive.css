@@ -61,6 +61,11 @@
         padding-top: 130px;
     }
 
+    .home-testimonials-section .title {
+
+        padding: 0px;
+    }
+
     .title {
         padding: 0 8px;
     }
@@ -108,6 +113,7 @@
     .home-projects-box-img img {
         height: 100%;
         object-fit: cover;
+        min-height: 100%;
     }
 
     .home-projects-box-title {
@@ -170,7 +176,7 @@
 
     .slide-card {
 
-        height: 177px;
+        height: 170px;
     }
 
     .home-client-section {
