@@ -105,8 +105,17 @@
          <section class="home-projects-section section" id="projects">
             <div class="container">
                <div class="title">
-                  <span class="sr-slide">My Projects</span>
-                  <h2 class="sr-slide">From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
+                  <span><span class="animated">My</span> <span class="animated">Projects</span></span>
+                  <h2>
+                     <span class="animated">From</span> <span class="animated">wrangling</span> <span class="animated">algorithms</span> <span class="animated">to</span>
+                     <span class="animated">crafting</span> <span class="animated">sleek</span> <span class="animated">interfaces,</span> <span class="animated">my</span>
+                     <span class="animated">last</span> <span class="animated">8</span> <span class="animated">years</span> <span class="animated">have</span> <span class="animated">been</span>
+                     <span class="animated">a</span> <span class="animated">dynamic</span> <span class="animated">journey</span> <span class="animated">through</span>
+                     <span class="animated">diverse</span> <span class="animated">projects.</span> <span class="animated">Here</span> <span class="animated">are</span>
+                     <span class="animated">some</span> <span class="animated">of</span> <span class="animated">them</span>
+                  </h2>
+                  <!-- <span>My Projects</span>
+                  <h2>From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2> -->
                </div>
                <div class="row">
                   <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -555,7 +564,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
       <script>
          window.addEventListener("load", function () {
             // Show animation for 3 seconds
@@ -565,6 +575,15 @@
                AOS.init({
                   duration: 1100,
                   offset: 0,
+               });
+               ScrollReveal().reveal(".animated", {
+                  duration: 700,
+                  distance: "50px",
+                  origin: "top",
+                  delay: 100,
+                  easing: "ease-in-out",
+                  interval: 100,
+                  reset: true,
                });
 
                // After content is loaded, check if there's a hash in the URL and scroll to the target section
@@ -594,24 +613,6 @@
          });
       </script>
       <script>
-         (function scrollReveal() {
-            window.sr = ScrollReveal();
-
-            sr.reveal(
-               ".sr-slide",
-               {
-                  duration: 600,
-                  distance: "20px",
-                  easing: "ease-out",
-                  origin: "bottom",
-                  reset: true,
-                  scale: 1,
-                  viewFactor: 0,
-               },
-               150
-            );
-         })();
-
          let scrollRef = 0;
          $(window).on("resize scroll", function () {
             // increase value up to 10, then refresh AOS

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ScrollReveal Animation</title>
+      <style>
+         /* Define the initial styles for the elements */
+         .animated {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Your HTML content -->
+      <span><span class="animated">My</span> <span class="animated">Projects</span></span>
+      <h2 class="letter">
+         <span class="animated">From</span> <span class="animated">wrangling</span> <span class="animated">algorithms</span> <span class="animated">to</span> <span class="animated">crafting</span>
+         <span class="animated">sleek</span> <span class="animated">interfaces</span>, <span class="animated">my</span> last 8 years have been a dynamic journey through diverse projects. Here are some
+         of them
+      </h2>
+
+      <!-- Include the ScrollReveal library -->
+      <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+      <script>
+         // Function to initialize ScrollReveal once the page is fully loaded
+         window.addEventListener("load", function () {
+            // Initialize ScrollReveal with custom configuration
+            ScrollReveal().reveal(".animated", {
+               duration: 1000,
+               distance: "50px",
+               origin: "top",
+               delay: 200,
+               easing: "ease-in-out",
+               interval: 100,
+               reset: true,
+            });
+         });
+      </script>
+   </body>
+</html>
