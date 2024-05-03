@@ -105,8 +105,8 @@
          <section class="home-projects-section section" id="projects">
             <div class="container">
                <div class="title">
-                  <span>My Projects</span>
-                  <h2 data-aos="fade-up">From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
+                  <span class="sr-slide">My Projects</span>
+                  <h2 class="sr-slide">From wrangling algorithms to crafting sleek interfaces, my last 8 years have been a dynamic journey through diverse projects. Here are some of them</h2>
                </div>
                <div class="row">
                   <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -555,6 +555,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
       <script>
          window.addEventListener("load", function () {
             // Show animation for 3 seconds
@@ -593,6 +594,24 @@
          });
       </script>
       <script>
+         (function scrollReveal() {
+            window.sr = ScrollReveal();
+
+            sr.reveal(
+               ".sr-slide",
+               {
+                  duration: 600,
+                  distance: "20px",
+                  easing: "ease-out",
+                  origin: "bottom",
+                  reset: true,
+                  scale: 1,
+                  viewFactor: 0,
+               },
+               150
+            );
+         })();
+
          let scrollRef = 0;
          $(window).on("resize scroll", function () {
             // increase value up to 10, then refresh AOS

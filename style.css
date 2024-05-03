@@ -308,6 +308,8 @@ a {
 .home-projects-box-img img {
     width: 100%;
     transition: all .3s ease-in;
+    min-height: 591px;
+    object-fit: cover;
 
 }
 
@@ -337,6 +339,11 @@ a {
     flex-direction: column;
     padding: 20px;
 
+}
+
+.home-projects-box-info a img {
+    min-height: auto;
+    height: auto;
 }
 
 .home-projects-box-info-lg a {
