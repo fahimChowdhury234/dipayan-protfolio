@@ -60,7 +60,7 @@
                               <a class="nav-link" href="#projects" target="_self" title="">My Projects</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link active" href="#testimonials" target="_self" title="">Testimonials</a>
+                              <a class="nav-link" href="#testimonials" target="_self" title="">Testimonials</a>
                            </li>
                            <li class="nav-item d-lg-none">
                               <a class="nav-link" href="#clients" target="_self" title="">Clients</a>
@@ -116,7 +116,7 @@
                            <img src="./assets/img/project-1-sm.jpg" alt="img" class="imgSm" />
 
                            <div class="home-projects-box-info">
-                              <a href="./ather.html">
+                              <a href="./ather.html" target="_blank">
                                  <h3>Designing India’s First charging infrastructure app</h3>
                                  <img src="./assets/img/right-arrow.svg" alt="arrow" />
                               </a>
@@ -135,7 +135,7 @@
                            <img src="./assets/img/project-2-sm.jpg" alt="img" class="imgSm" />
 
                            <div class="home-projects-box-info">
-                              <a href="./campaign.html">
+                              <a href="./campaign.html" target="_blank">
                                  <h3>
                                     The biggest <br />
                                     beauty campaign In 2024
@@ -158,7 +158,7 @@
                            <img src="./assets/img/project-3-sm.jpg" alt="img" class="imgSm" />
 
                            <div class="home-projects-box-info">
-                              <a href="./magazine.html">
+                              <a href="./magazine.html" target="_blank">
                                  <h3>
                                     Crafting an <br />
                                     online magazine
@@ -180,7 +180,7 @@
                            <img src="./assets/img/project-4-sm.jpg" alt="img" class="imgSm" />
 
                            <div class="home-projects-box-info home-projects-box-info-lg">
-                              <a href="./snaps.html">
+                              <a href="./snaps.html" target="_blank">
                                  <h3>
                                     A Glimpse into <br />
                                     My Portfolio
@@ -202,7 +202,7 @@
                            <img src="./assets/img/project-5-sm.jpg" alt="img" class="imgSm" />
 
                            <div class="home-projects-box-info home-projects-box-info-lg">
-                              <a href="./treebo.html">
+                              <a href="./treebo.html" target="_blank">
                                  <h3>
                                     Re-defining Hotel <br />
                                     booking experience
@@ -576,6 +576,17 @@
          });
       </script>
       <script>
+         var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+         navLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+               // Remove active class from all links
+               navLinks.forEach(function (link) {
+                  link.classList.remove("active");
+               });
+               // Add active class to the clicked link
+               link.classList.add("active");
+            });
+         });
          let scrollRef = 0;
          $(window).on("resize scroll", function () {
             // increase value up to 10, then refresh AOS
