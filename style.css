@@ -318,8 +318,12 @@ a {
     width: 100%;
     transition: all .3s ease-in;
     min-height: 591px;
-    object-fit: cover;
 
+}
+
+.releted-project-section .home-projects-box-img img {
+
+    object-fit: cover;
 }
 
 .home-projects-box-info {
