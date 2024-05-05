@@ -12,40 +12,6 @@ html {
 }
 
 
-@font-face {
-    font-family: 'ObjectSans';
-    src: url('assets/fonts/PPObjectSans-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ObjectSans-bold';
-    src: url('assets/fonts/PPObjectSans-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ObjectSans-Semibold';
-    src: url('./assets/fonts/PPObjectSans-Semibold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ObjectSans-Medium';
-    src: url('./assets/fonts/PPObjectSans-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ObjectSans-Light';
-    src: url('./assets/fonts/PPObjectSans-Thin.otf') format('opentype');
-    font-weight: lighter;
-    font-style: normal;
-}
 
 :root {
     --text-color: #0C0C0C;
@@ -55,7 +21,6 @@ body {
     background-color: #FFFFFF;
     color: var(--text-color);
     position: relative;
-    /* font-family: 'ObjectSans', sans-serif; */
     font-family: "Open Sans", sans-serif;
     height: 100%;
     overflow-x: hidden;
@@ -70,7 +35,6 @@ h5,
 button,
 a,
 p {
-    /* font-family: 'ObjectSans', sans-serif; */
     font-family: "Open Sans", sans-serif;
     margin: 0;
 
@@ -166,9 +130,7 @@ a {
 .hero-section {
     height: calc(100vh - 105px);
     background-color: #FFFAF3;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+
     position: relative;
 }
 
@@ -179,11 +141,10 @@ a {
 
 .hero-box h1 {
     font-size: 64px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 96px;
     color: #010101;
     margin-bottom: 30px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
     animation-name: welcomeFadeIn, welcomeMoveIn;
     animation-duration: calc(0.9 * 1s), calc(0.7 * 1s);
     animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
@@ -241,7 +202,6 @@ a {
     display: inline-block;
     margin-bottom: 20px;
     text-transform: uppercase;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
 
 }
 
@@ -295,7 +255,6 @@ a {
 
 .home-projects-box-title h3 span {
     font-weight: 500;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
 
 }
 
@@ -376,7 +335,7 @@ a {
     color: #FFFAF3;
     margin-bottom: 10px;
     text-transform: uppercase;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -398,7 +357,7 @@ a {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.1em;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -490,7 +449,7 @@ a {
     line-height: 24px;
     letter-spacing: 0.1em;
     color: #686868;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
     display: inline-block;
 }
@@ -542,7 +501,7 @@ a {
 .footer-box-one p a {
     font-weight: 500;
     color: #fff;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -661,7 +620,7 @@ a {
     font-size: 40px;
     font-weight: 500;
     line-height: 56px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
     margin-bottom: 20px;
 }
@@ -691,7 +650,7 @@ a {
 }
 
 .project-details-box b {
-    font-family: 'ObjectSans-bold', sans-serif;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -702,7 +661,7 @@ a {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
     margin-bottom: 10px;
     color: #1E1E1E;
 
@@ -770,7 +729,7 @@ a {
     line-height: 36px;
     color: #fff;
     margin-bottom: 20px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -813,7 +772,6 @@ a {
     text-align: center;
     color: #1E1E1E;
     margin-bottom: 20px;
-    font-family: 'ObjectSans-Medium';
 
 }
 
@@ -900,7 +858,7 @@ a {
     font-weight: 500;
     line-height: 22px;
     color: #211A1E;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -983,7 +941,7 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 33px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
     letter-spacing: 0.02em;
 
@@ -1072,7 +1030,7 @@ a {
     line-height: 12px;
     letter-spacing: 0.05em;
     color: #211A1E;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -1117,7 +1075,7 @@ a {
     line-height: 12px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -1190,7 +1148,7 @@ a {
     line-height: 36px;
     color: #1E1E1E;
     margin-bottom: 10px;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
@@ -1212,7 +1170,7 @@ a {
     letter-spacing: 0.1em;
     color: #686868;
     text-align: center;
-    /* font-family: 'ObjectSans-Medium', sans-serif; */
+
 
 }
 
