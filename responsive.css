@@ -260,6 +260,10 @@
         padding-top: 30px;
     }
 
+    .project-details-box-outcome {
+        margin: 0;
+    }
+
     .treebo-project-section {
         padding-bottom: 30px;
     }
