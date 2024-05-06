@@ -24,7 +24,6 @@ body {
     font-family: "Open Sans", sans-serif;
     height: 100%;
     overflow-x: hidden;
-
 }
 
 h1,
@@ -570,7 +569,8 @@ a {
     align-items: center;
 }
 
-#animation-container video {
+#animation-container video,
+#animation-container img {
     width: 125px;
     height: 90px;
 
